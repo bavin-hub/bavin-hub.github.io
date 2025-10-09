@@ -32,6 +32,7 @@ _Pittsburgh, USA | Aug 2025 – Present_
 - Optimized **Whole-Body Controller (WBC)** for GPU parallelism with PyTorch + CUDA — improving simulation speed for humanoid control.  
 - Conducted **gait control experiments** on humanoid robot (G1) in simulation; preparing for hardware deployment.  
 
+![Arm](/assets/img/arm.jpg)
 ---
 
 ### **AI & Robotics Engineer – Skytex Unmanned Aerial Solutions**  
@@ -53,7 +54,7 @@ _Bengaluru, India | Jul 2023 – Jul 2025_
 - Built **palm-sized quadrotor (Jetson Orin NX)** for GPS-denied navigation in forests.  
 - Integrated **Isaac-ROS SLAM** and **A\*** path planning with onboard target verification via Siamese Neural Networks.  
 - Enabled full autonomy for obstacle-aware search using a **Lissajous trajectory** strategy.  
-
+![Arm](/assets/img/arm.jpg) ![Arm](/assets/img/arm.jpg)
 ---
 
 ## 🚀 Projects
@@ -63,6 +64,8 @@ _05/2025 – Present_
 - Building an **open-source AI search engine** combining web, image, and voice retrieval.  
 - Implemented distributed pipelines for **semantic indexing** and **vector similarity search** using **BERT, SBERT, CLIP**.  
 - Extending functionality for **cross-modal retrieval** and **low-latency semantic ranking**.
+
+  ![Arm](/assets/img/arm.jpg)
 
 ### **Chess-Playing Robot Arm**
 _08/2020 – 02/2022_  
@@ -83,7 +86,7 @@ _08/2020 – 02/2022_
 
 ---
 
-## 📚 Publications
+## 📚 Publications (I was working on Robotics and Shape Memory Alloys during my undergrad)
 1. Santosh S, Bavin S, Srivatsan T.S. *Comparing surface characteristics of Cu–Al–Fe alloys using thermal-based machining processes.*, **Surface Engineering**, 2024.  
    DOI: 10.1177/02670844241276371  
 2. Santosh S, Bavin S. *Experimental Studies on Wire Electric Discharge Machining of Cu–Al–Fe Shape Memory Alloy*, under review, **Physica Scripta**, IOP Publishing.
