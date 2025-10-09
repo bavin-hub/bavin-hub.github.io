@@ -1,56 +1,100 @@
-# AI Engineer and Roboticist
+# 🤖 AI & Robotics Engineer
 
-#### Technical Skills: Python, C++, Tensorflow, Keras, Px4-autopilot, Robot Operating System, OpenCV, Flask
+**Graduate Researcher @ Safe-AI Lab, Carnegie Mellon University**  
+**Former AI & Robotics Engineer @ Skytex UAVs Pvt Ltd**  
+**Areas:** Safe and Reliable AI, Robotic Control, Reinforcement Learning, Simulation, Swarm Intelligence  
 
-## Education
-- B.E, Mechanical | SSN college of Engineering (_May 2023_)								       		
+---
 
+### 🧠 Technical Skills
+**Languages & Tools:** Python, C++, Bash, Linux, ROS2, PX4, IsaacSim, Gazebo, OpenCV, Flask, AWS  
+**AI Frameworks:** PyTorch, TensorFlow  
+**Core Areas:** Control Theory, Deep Learning, Reinforcement Learning, SLAM, Path Planning, Multi-Agent Systems  
 
-## Work Experience
-**AI and Navigation Engineer @ Skytex Unmanned Aerial Vehicles Pvt Ltd (_July 2023 - Present_)**
-### CACTUS
-- A VTOL Fixed Wing decentralized swarm system that exhibits all swarm capablities namingly schooling, flocking, foraging, payload dropping, object detection and collision avoidance. 
-- Designed novel vector field guidance algorithm for smooth navigation of the swarm system. 
-- Developed network stack for efficient communication among the uavs. 
-- Wrote mavlink commands, which will be sent to the PX4 autopilot from a jetson xavier-nx onboard computer using ROS2 and UXRCE agent. 
-- The swarm is capable of flying at an altitude of 3km and performs on air collision as well as obstacle avoidance. 
-- A custom web-gcs to plan and execute own missions.
+---
 
-### BUMBLEBEE
-- Palm sized quadrotor equipped with Jetson Orin-nx that navigates through gps-denied forest environment and executes a lissajous search pattern. 
-- Developed slam using RTABMAP which generates the cloud points of the local obstacles.
-- Obstacle points are fed to A-star path-planning algorithm to generate next set of waypoints. 
-- Designed a 3d vector field algorithm to execute the trajectory and in order to ensure a
-smooth transition from current waypoint to the next.
-- Performs target verification using a Siamese neural networks.
+## 🎓 Education
+**M.S Mechanical Engineering (Research) – Safe-AI Lab**  
+_Carnegie Mellon University, USA (Aug 2025 – Present)_  
+> Focus: Control Theory, Machine Learning, Reinforcement Learning, Robotics  
 
+**B.E Mechanical Engineering**  
+_SSN College of Engineering, India (May 2023)_  
+> CGPA: 8.74 / 10.0 | Focus: Kinematics, Dynamics, Robot Mechanics  
 
-## Projects
-### Chess Playing Robot Arm
+---
 
-Built a 5-dof non-holonomic articulated manipulator that plays chess one-on-one with human. Trained a simple convolutional neural network that identifies the chess-coin type in every location of the board and converts it to Forsyth–Edwards Notation. Image subtraction algorithm the finds the coin location to perform pick-and-place operation. The computer vision stack runs inside a raspberry-pi 3b+ whereas the inverse kinematics as well as the pick-and-place stack runs inside arduino uno. The communication happens via rosserial.
+## 🔬 Research & Professional Experience
 
-![Arm](/assets/img/arm.jpg)
+### **Graduate Researcher – Safe-AI Lab, Carnegie Mellon University**  
+_Pittsburgh, USA | Aug 2025 – Present_  
+- Porting and optimizing **LocoMan locomotion controller** from IsaacGym → IsaacLab using IsaacSim API.  
+- Optimized **Whole-Body Controller (WBC)** for GPU parallelism with PyTorch + CUDA — improving simulation speed for humanoid control.  
+- Conducted **gait control experiments** on humanoid robot (G1) in simulation; preparing for hardware deployment.  
 
-### Face Recognition
+---
 
-Developed and attendance management system using Siamese neural networks architecture. The network was trained on both crossentropy and triplet loss. The dataset consists of 450 pictures of 15 employees working in a small scaled company. The whole architecture is embedded into RaspberryPi-3b+ and the camera used was logitech c270.
+### **AI & Robotics Engineer – Skytex Unmanned Aerial Solutions**  
+_Bengaluru, India | Jul 2023 – Jul 2025_
 
-### Autonomous pick and place drone
+#### **Cactus Swarm**
+- Developed **decentralized multi-agent VTOL UAV swarm** demonstrating flocking, schooling, foraging, and payload delivery.  
+- Proposed a **vector field-based guidance algorithm** for coordinated swarm flight.  
+- Built a **real-time MAVLink + ROS2 + XRCE-DDS communication stack** for autonomous UAV operations.  
+- Achieved flight autonomy up to **2 km altitude** and **12 km endurance**.  
+- Built a **web-based GCS** for mission planning and monitoring.  
 
-Designed and Built a quadrotor equipped with a 3d printed solenoid gripper for pick and place action. Camera and a TFmini lidar attached to the bottom of the drones senses (object detection) the object of interest on the ground at the same time maintaining the current altitude (2m). Uses Pixhawk flight controller with RaspberryPi-3b+ as a companion computer to send and receive MAVLINK commands. The entire stack was built using Drone-Kit and ROS for easy and efficient communication between all hardware components as well the scripts.
+#### **Ghost LM**
+- Designed **autonomous loitering munition** algorithms with pre-coordinated and dynamic strike capabilities.  
+- Integrated **real-time computer vision pipelines** for target detection, tracking, and strike decision-making.  
+- Built a **mission-specific GCS** supporting dynamic mission updates and operator-assisted strike control.  
 
-![Autonomous drone](/assets/img/autonomous_drone.jpg)
+#### **Bumblebee**
+- Built **palm-sized quadrotor (Jetson Orin NX)** for GPS-denied navigation in forests.  
+- Integrated **Isaac-ROS SLAM** and **A\*** path planning with onboard target verification via Siamese Neural Networks.  
+- Enabled full autonomy for obstacle-aware search using a **Lissajous trajectory** strategy.  
 
-### Jaffa-Sparrow
-Trained a tiny interactive language model trained in native tamil. The model was trained on multilingual c4 (mc4), news articles, tiny books, wikipedia datasets. Training was done on 2 x 4060ti gpu (Single host multi device strategy) with data parallelism. The model was later fine-tuned on tamil converstions datasets to be able to carry out multi-turn conversations. 
+---
 
+## 🚀 Projects
 
+### **AIRRO – AI-Powered Multimodal Search Engine**
+_05/2025 – Present_  
+- Building an **open-source AI search engine** combining web, image, and voice retrieval.  
+- Implemented distributed pipelines for **semantic indexing** and **vector similarity search** using **BERT, SBERT, CLIP**.  
+- Extending functionality for **cross-modal retrieval** and **low-latency semantic ranking**.
 
-## Publications
-1. Santosh S, Bavin S, Srivatsan TS. Comparing surface characteristics of Cu-Al-Fe alloys using thermal-based machining processes., Surface Engineering. 2024;40(5):558-567.
-doi:10.1177/02670844241276371
-2. Santosh S, Bavin S. Experimental Studies on Wire Electric Discharge Machining of
-Copper-Aluminium-Iron Ternary Shape Memory Alloy, (under review in Physica Scripta), IOP
-publishing company
+### **Chess-Playing Robot Arm**
+_08/2020 – 02/2022_  
+- Designed and built a **5-DOF articulated manipulator** that plays chess one-on-one with humans.  
+- Used **CNN** for board state recognition → converted to **Forsyth–Edwards Notation (FEN)**.  
+- Implemented vision on Raspberry Pi and inverse kinematics + motion control on Arduino.  
+- Enabled perception-action integration using **ROS Serial**.  
+- [🔗 View project](https://github.com/bavin-hub/chess-playing-robot-arm)
 
+---
+
+## 🛰 Leadership & Teaching
+
+- **Teaching Assistant – Trustworthy AI** | CMU, Fall 2025  
+- **Member – Carnegie Mellon Rocket Command** | NASA 2026 BIG Idea Challenge  
+- **Organizer – Deep Learning & ROS2 Workshop** | Chennai, India (Nov 2024)  
+
+---
+
+## 📚 Publications
+1. Santosh S, Bavin S, Srivatsan T.S. *Comparing surface characteristics of Cu–Al–Fe alloys using thermal-based machining processes.*, **Surface Engineering**, 2024.  
+   DOI: 10.1177/02670844241276371  
+2. Santosh S, Bavin S. *Experimental Studies on Wire Electric Discharge Machining of Cu–Al–Fe Shape Memory Alloy*, under review, **Physica Scripta**, IOP Publishing.
+
+---
+
+## 🌐 Links
+- 🔗 [GitHub](https://github.com/bavin-hub)  
+- 🔗 [LinkedIn](https://www.linkedin.com/in/bavin-ab61671b6)  
+- 🔗 [Safe-AI Lab](https://safeai-lab.github.io/)  
+- 🔗 [Skytex UAVs](https://theskytex.com/)  
+
+---
+
+_“Building intelligent, autonomous systems that bridge control theory and learning-based reasoning.”_
