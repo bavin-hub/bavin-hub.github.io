@@ -69,8 +69,9 @@ _08/2020 – 02/2022_
 - Designed and built a **5-DOF articulated manipulator** that plays chess one-on-one with humans.  
 - Used **CNN** for board state recognition → converted to **Forsyth–Edwards Notation (FEN)**.  
 - Implemented vision on Raspberry Pi and inverse kinematics + motion control on Arduino.  
-- Enabled perception-action integration using **ROS Serial**.  
-- ![Arm](/assets/img/arm.jpg)
+- Enabled perception-action integration using **ROS Serial**.
+
+![Arm](/assets/img/arm.jpg)
 
 ---
 
