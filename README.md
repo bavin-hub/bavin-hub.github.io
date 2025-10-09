@@ -70,7 +70,7 @@ _08/2020 – 02/2022_
 - Used **CNN** for board state recognition → converted to **Forsyth–Edwards Notation (FEN)**.  
 - Implemented vision on Raspberry Pi and inverse kinematics + motion control on Arduino.  
 - Enabled perception-action integration using **ROS Serial**.  
-- [🔗 View project](https://github.com/bavin-hub/chess-playing-robot-arm)
+- ![Arm](/assets/img/arm.jpg)
 
 ---
 
