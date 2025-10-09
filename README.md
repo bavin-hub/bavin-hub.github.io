@@ -96,5 +96,3 @@ _08/2020 – 02/2022_
 - 🔗 [Skytex UAVs](https://theskytex.com/)  
 
 ---
-
-_“Building intelligent, autonomous systems that bridge control theory and learning-based reasoning.”_
