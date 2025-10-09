@@ -31,8 +31,7 @@ _Pittsburgh, USA | Aug 2025 – Present_
 - Porting and optimizing **LocoMan locomotion controller** from IsaacGym → IsaacLab using IsaacSim API.  
 - Optimized **Whole-Body Controller (WBC)** for GPU parallelism with PyTorch + CUDA — improving simulation speed for humanoid control.  
 - Conducted **gait control experiments** on humanoid robot (G1) in simulation; preparing for hardware deployment.  
-
-![Arm](/assets/img/arm.jpg)
+![Arm](/assets/img/safeai.jpg)
 ---
 
 ### **AI & Robotics Engineer – Skytex Unmanned Aerial Solutions**  
@@ -54,7 +53,7 @@ _Bengaluru, India | Jul 2023 – Jul 2025_
 - Built **palm-sized quadrotor (Jetson Orin NX)** for GPS-denied navigation in forests.  
 - Integrated **Isaac-ROS SLAM** and **A\*** path planning with onboard target verification via Siamese Neural Networks.  
 - Enabled full autonomy for obstacle-aware search using a **Lissajous trajectory** strategy.  
-![Arm](/assets/img/arm.jpg) ![Arm](/assets/img/arm.jpg)
+![Arm](/assets/img/swarm.jpg) ![Arm](/assets/img/lm.jpg)
 ---
 
 ## 🚀 Projects
@@ -65,7 +64,7 @@ _05/2025 – Present_
 - Implemented distributed pipelines for **semantic indexing** and **vector similarity search** using **BERT, SBERT, CLIP**.  
 - Extending functionality for **cross-modal retrieval** and **low-latency semantic ranking**.
 
-  ![Arm](/assets/img/arm.jpg)
+  ![Arm](/assets/img/airro.jpg)
 
 ### **Chess-Playing Robot Arm**
 _08/2020 – 02/2022_  
