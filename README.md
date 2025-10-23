@@ -1,6 +1,6 @@
 # 🤖 AI & Robotics Engineer
 
-**Graduate Researcher @ Safe-AI Lab, Carnegie Mellon University**  
+**Graduate Researcher Carnegie Mellon University**  
 **Former AI & Robotics Engineer @ Skytex UAVs Pvt Ltd**  
 **Areas:** Safe and Reliable AI, Robotic Control, Reinforcement Learning, Simulation, Swarm Intelligence  
 
@@ -14,7 +14,7 @@
 ---
 
 ## 🎓 Education
-**M.S Mechanical Engineering (Research) – Safe-AI Lab**  
+**M.S Mechanical Engineering (Research)**  
 _Carnegie Mellon University, USA (Aug 2025 – Present)_  
 > Focus: Control Theory, Machine Learning, Reinforcement Learning, Robotics  
 
@@ -26,11 +26,9 @@ _SSN College of Engineering, India (May 2023)_
 
 ## 🔬 Research & Professional Experience
 
-### **Graduate Researcher – Safe-AI Lab, Carnegie Mellon University**  
+### **Graduate Researcher, Carnegie Mellon University**  
 _Pittsburgh, USA | Aug 2025 – Present_  
-- Porting and optimizing **LocoMan locomotion controller** from IsaacGym → IsaacLab using IsaacSim API.  
-- Optimized **Whole-Body Controller (WBC)** for GPU parallelism with PyTorch + CUDA — improving simulation speed for humanoid control.  
-- Conducted **gait control experiments** on humanoid robot (G1) in simulation; preparing for hardware deployment.  
+- I love humanoids
 ![Arm](/assets/img/safeai.jpg)
 ---
 
@@ -95,7 +93,6 @@ _08/2020 – 02/2022_
 ## 🌐 Links
 - 🔗 [GitHub](https://github.com/bavin-hub)  
 - 🔗 [LinkedIn](https://www.linkedin.com/in/bavin-ab61671b6)  
-- 🔗 [Safe-AI Lab](https://safeai-lab.github.io/)  
 - 🔗 [Skytex UAVs](https://theskytex.com/)  
 
 ---
