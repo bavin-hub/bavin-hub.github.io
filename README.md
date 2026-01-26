@@ -26,10 +26,10 @@ _SSN College of Engineering, India (May 2023)_
 
 ## 🔬 Research & Professional Experience
 
-### **Graduate Researcher, Carnegie Mellon University**  
-_Pittsburgh, USA | Aug 2025 – Present_  
-- I love humanoids
+### **I love humanoids** 
+
 ![Arm](/assets/img/safeai.jpg)
+
 ---
 
 ### **AI & Robotics Engineer – Skytex Unmanned Aerial Solutions**  
@@ -58,7 +58,7 @@ _Bengaluru, India | Jul 2023 – Jul 2025_
 
 ### **AIRRO – AI-Powered Multimodal Search Engine**
 _05/2025 – Present_  
-- Building an **open-source AI search engine** combining web, image, and voice retrieval.  
+- Building an **AI search engine** combining web, image, and voice retrieval.  
 - Implemented distributed pipelines for **semantic indexing** and **vector similarity search** using **BERT, SBERT, CLIP**.  
 - Extending functionality for **cross-modal retrieval** and **low-latency semantic ranking**.
 
@@ -78,7 +78,6 @@ _08/2020 – 02/2022_
 ## 🛰 Leadership & Teaching
 
 - **Teaching Assistant – Trustworthy AI** | CMU, Fall 2025  
-- **Member – Carnegie Mellon Rocket Command** | NASA 2026 BIG Idea Challenge  
 - **Organizer – Deep Learning & ROS2 Workshop** | Chennai, India (Nov 2024)  
 
 ---
