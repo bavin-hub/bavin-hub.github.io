@@ -14,7 +14,7 @@
 ---
 
 ## 🎓 Education
-**M.S Mechanical Engineering (Research)**  
+**M.S Mechanical Engineering (Advanced Study)**  
 _Carnegie Mellon University, USA (Aug 2025 – Present)_  
 > Focus: Control Theory, Machine Learning, Reinforcement Learning, Robotics  
 
