@@ -61,7 +61,7 @@ An ongoing research-oriented engineering project combining web, image, and voice
 - Developing cross-modal retrieval for heterogeneous query types
 - Targeting low-latency semantic ranking for real-time search applications
 
-![AIRRO](/assets/img/airro.jpg)
+![AIRRO](/assets/img/airro_new.jpg)
 
 ---
 
