@@ -3,7 +3,6 @@ plugins:
   - jekyll-remote-theme
  
 # Site identity
-title: Bavin Saravanan
 description: >
   Masters Researcher, Carnegie Mellon University.
   Autonomous systems at the intersection of control theory,
