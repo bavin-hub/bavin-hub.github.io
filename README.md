@@ -1,45 +1,8 @@
-# Bavin S.
+# Bavin Saravanan
 
-**Ph.D. Researcher · Carnegie Mellon University**  
-Mechanical Engineering · Robotics Institute (Affiliated)
+## About Me
 
-_Building intelligent, autonomous systems that bridge control theory and learning-based reasoning._
-
----
-
-## Research Interests
-
-Autonomous systems operating at the intersection of **control theory**, **reinforcement learning**, and **multi-agent coordination** — with emphasis on reliability, real-world deployability, and safe decision-making under uncertainty.
-
-**Keywords:** Safe & Reliable AI · Robot Control · Reinforcement Learning · Autonomous Navigation · Swarm Intelligence · Simulation-to-Reality Transfer
-
----
-
-## Education
-
-**Ph.D. Mechanical Engineering** _(In Progress)_  
-Carnegie Mellon University, Pittsburgh, USA — Aug 2025 – Present  
-_Focus: Control Theory · Machine Learning · Reinforcement Learning · Robotics_
-
-**M.S. Mechanical Engineering (Advanced Study)**  
-Carnegie Mellon University, Pittsburgh, USA — Aug 2025 – Present
-
-**B.E. Mechanical Engineering** — _CGPA: 8.74 / 10.0_  
-SSN College of Engineering, Chennai, India — Graduated May 2023  
-_Focus: Kinematics · Dynamics · Robot Mechanics_
-
----
-
-## Technical Competencies
-
-| Domain | Tools & Technologies |
-|---|---|
-| **Languages** | Python · C++ · Bash |
-| **Robotics & Simulation** | ROS2 · PX4 · IsaacSim · Gazebo · SLAM · Path Planning |
-| **AI / ML** | PyTorch · TensorFlow · Deep Learning · Reinforcement Learning |
-| **Computer Vision** | OpenCV · CLIP · BERT · SBERT |
-| **Infrastructure** | Linux · AWS · Flask |
-| **Theory** | Control Theory · Multi-Agent Systems · Kinematics & Dynamics |
+I’m a Master’s student in Mechanical Engineering at Carnegie Mellon University and a researcher at AirLab, where I focus on building intelligent autonomous systems that operate reliably in real-world environments. My work lies at the intersection of control theory and learning-based approaches, particularly reinforcement learning and multi-agent coordination, with an emphasis on safety, robustness, and decision-making under uncertainty. I’m especially interested in bridging the gap between theory and deployment—developing methods that not only perform well in simulation but can be transferred effectively to physical systems. This includes tackling challenges in autonomous navigation, system reliability, and scalable coordination among multiple agents. I hold a Bachelor’s degree in Mechanical Engineering from SSN College of Engineering (Chennai, India), where I developed a strong foundation in robot dynamics, kinematics, and control. This background continues to shape my approach to designing systems that are both principled and practical. Overall, I’m driven by the goal of enabling autonomous systems to perceive, adapt, and collaborate seamlessly in complex, dynamic environments.
 
 ---
 
@@ -102,23 +65,11 @@ An ongoing research-oriented engineering project combining web, image, and voice
 
 ---
 
-### Chess-Playing Robotic Manipulator
-_Aug 2020 – Feb 2022_
-
-Designed and built a 5-DOF articulated manipulator capable of playing chess autonomously against human opponents — perception through planning through execution, fully integrated onboard.
-
-- Developed **CNN-based board state recognition** with conversion to Forsyth–Edwards Notation (FEN)
-- Implemented inverse kinematics and motion control on Arduino; vision pipeline on Raspberry Pi
-- Achieved perception-action integration via **ROS Serial** communication
-
-![Robotic Arm](/assets/img/arm.jpg)
-
----
-
 ## Teaching & Outreach
 
 | Role | Institution | Period |
 |---|---|---|
+| **Teaching Assistant — Ai/Ml Project for Enginners** | Carnegie Mellon University | Spring 2026 |
 | **Teaching Assistant — Trustworthy AI** | Carnegie Mellon University | Fall 2025 |
 | **Organizer — Deep Learning & ROS2 Workshop** | Chennai, India | Nov 2024 |
 
