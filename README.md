@@ -57,8 +57,7 @@ _May 2025 – Present_
 
 An ongoing research-oriented engineering project combining web, image, and voice retrieval modalities into a unified semantic search system.
 
-- Implementing distributed indexing pipelines with **BERT**, **SBERT**, and **CLIP** embeddings
-- Developing cross-modal retrieval for heterogeneous query types
+- Implementing distributed indexing pipelines with **BM25** and **nomic-embed**
 - Targeting low-latency semantic ranking for real-time search applications
 
 ![AIRRO](/assets/img/airro_new.jpg)
