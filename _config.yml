@@ -3,9 +3,9 @@ plugins:
   - jekyll-remote-theme
  
 # Site identity
-title: Bavin S.
+title: Bavin Saravanan
 description: >
-  Ph.D. Researcher, Carnegie Mellon University.
+  Masters Researcher, Carnegie Mellon University.
   Autonomous systems at the intersection of control theory,
   reinforcement learning, and multi-agent coordination.
  
@@ -16,5 +16,5 @@ logo: /assets/img/bavin.png
 show_downloads: false
  
 # SEO
-author: Bavin S.
+author: Bavin Saravanan
 lang: en
