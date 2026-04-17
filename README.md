@@ -13,14 +13,17 @@ A two-year industry research role developing full-stack autonomy for unmanned ae
 
 ---
 
-#### Cactus Swarm — Decentralized Multi-Agent UAV Swarm
+#### Cactus Swarm — Decentralized Multi-Agent VTOL UAV Swarm
 
-Designed and deployed a decentralized multi-agent VTOL UAV swarm demonstrating emergent behaviors including flocking, schooling, foraging, and coordinated payload delivery.
+Autonomous UAV swarms have applications in disaster response, environmental monitoring, and distributed logistics, where scalable coordination can significantly improve efficiency and safety. This project aimed to design and deploy a fully decentralized multi-agent VTOL UAV swarm capable of robust, real-time coordination without centralized control.
 
-- Proposed a **vector field-based guidance algorithm** for scalable coordinated swarm flight
-- Architected a real-time **MAVLink + ROS2 + XRCE-DDS** communication stack for fully autonomous operations
-- Achieved flight autonomy at altitudes up to **2 km** with **12 km endurance**
-- Developed a web-based Ground Control Station (GCS) supporting real-time mission planning and telemetry monitoring
+Designed and deployed a decentralized multi-agent VTOL UAV swarm demonstrating emergent behaviors including flocking, schooling, foraging, and coordinated payload delivery. Evaluated system performance through field tests, confirming stable flight autonomy at scale and reliable inter-agent coordination under communication constraints.
+
+- Proposed a **vector field-based guidance algorithm** enabling scalable and collision-free coordinated swarm flight  
+- Architected a real-time **MAVLink + ROS2 + XRCE-DDS** communication stack to support low-latency, fully autonomous operations  
+- Achieved sustained autonomous flight at altitudes up to **2 km** with **12 km endurance**, validated through outdoor test missions  
+- Developed a web-based Ground Control Station (GCS) for real-time mission planning, telemetry visualization, and system monitoring  
+- Led the design and implementation of swarm coordination algorithms and integrated the communication stack across all agents  
 
 ![Swarm](/assets/img/swarm.jpg)
 
@@ -28,11 +31,15 @@ Designed and deployed a decentralized multi-agent VTOL UAV swarm demonstrating e
 
 #### Ghost LM — Autonomous Loitering Munition
 
-Designed guidance and mission management algorithms for an autonomous loitering munition platform, emphasizing operator-in-the-loop control and dynamic retargeting.
+Autonomous loitering systems can enhance precision engagement while reducing operator workload in time-sensitive missions. This project aimed to design a loitering munition platform with robust guidance, adaptive mission management, and operator-in-the-loop control to ensure flexibility and accountability in dynamic environments.
 
-- Developed pre-coordinated and dynamic strike algorithms with real-time mission update capability
-- Integrated computer vision pipelines for target detection, tracking, and strike decision verification
-- Built a mission-specific GCS supporting dynamic replanning and operator-assisted strike authorization
+Designed guidance and mission management algorithms for an autonomous loitering munition platform, emphasizing operator-in-the-loop control and dynamic retargeting. Evaluated system performance through simulated and controlled tests, demonstrating reliable target reacquisition, real-time mission updates, and improved decision latency.
+
+- Developed pre-coordinated and dynamic strike algorithms with real-time mission update capability  
+- Integrated computer vision pipelines for target detection, tracking, and strike decision verification  
+- Built a mission-specific Ground Control Station (GCS) supporting dynamic replanning and operator-assisted strike authorization  
+- Validated system responsiveness and targeting accuracy under varying mission scenarios  
+- Led the development of guidance logic and contributed to vision-system integration and GCS design  
 
 ![Loitering Munition](/assets/img/lm.jpg)
 
@@ -40,23 +47,32 @@ Designed guidance and mission management algorithms for an autonomous loitering 
 
 #### Bumblebee — Miniature Autonomous Quadrotor for GPS-Denied Environments
 
-Built a palm-sized quadrotor (Jetson Orin NX) capable of fully autonomous navigation in GPS-denied, cluttered environments such as forests and urban canyons.
+Reliable navigation in GPS-denied environments is critical for applications such as search and rescue, infrastructure inspection, and exploration in complex terrain. This project aimed to develop a palm-sized quadrotor capable of fully autonomous, obstacle-aware navigation in cluttered environments without reliance on external positioning systems.
 
-- Integrated **Isaac-ROS SLAM** with **A\*** path planning for real-time obstacle-aware navigation
-- Deployed onboard target verification using **Siamese Neural Networks**
-- Implemented a **Lissajous trajectory** search strategy for systematic area coverage
+Built a compact quadrotor platform (Jetson Orin NX) capable of autonomous flight in GPS-denied environments such as forests and urban canyons. Evaluated system performance through indoor and outdoor tests, demonstrating robust localization, consistent obstacle avoidance, and effective area coverage under constrained sensing and compute resources.
+
+- Integrated **Isaac-ROS SLAM** with **A\*** path planning for real-time, obstacle-aware navigation  
+- Deployed onboard target verification using **Siamese Neural Networks** for lightweight visual matching  
+- Implemented a **Lissajous trajectory** search strategy to enable systematic and efficient area coverage  
+- Validated localization accuracy and navigation reliability in cluttered, GPS-denied scenarios  
+- Led system integration across perception, planning, and control, and developed core autonomy pipelines  
 
 ---
 
-## Projects
+## Personal
 
-### AIRRO — AI-Powered Multimodal Search Engine
+### AIRRO — AI-Powered Multimodal Search Engine  
 _May 2025 – Present_
 
-An ongoing research-oriented engineering project combining web, image, and voice retrieval modalities into a unified semantic search system.
+Multimodal search systems can improve information access by unifying text, image, and voice queries into a single semantic framework. This project aims to design a scalable, low-latency search engine that supports real-time retrieval across modalities while maintaining high relevance and efficiency.
 
-- Implementing distributed indexing pipelines with **BM25** and **nomic-embed**
-- Targeting low-latency semantic ranking for real-time search applications
+Developing a research-oriented multimodal search system integrating web, image, and voice retrieval into a unified semantic pipeline. Ongoing evaluation focuses on retrieval relevance, latency, and scalability under increasing data and query loads.
+
+- Implementing distributed indexing pipelines using **BM25** and **nomic-embed** for hybrid lexical-semantic retrieval  
+- Designing low-latency semantic ranking strategies for real-time search applications  
+- Building modular pipelines to support cross-modal query understanding and retrieval  
+- Benchmarking system performance on latency and relevance metrics across modalities  
+- Leading system architecture design and core retrieval pipeline development  
 
 ![AIRRO](/assets/img/airro_new.jpg)
 
