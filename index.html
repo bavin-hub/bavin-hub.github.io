@@ -257,22 +257,10 @@
             style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
 
-              <tr onmouseout="motor_stop()" onmouseover="motor_start()">
+              <tr>
                 <td style="padding:16px;width:20%;vertical-align:middle">
-                  <div class="one">
-                    <div class="two" id='motor_image'><img src='images/safeai.png' width=100%></div>
-                    <img src='images/safeai.png' width=100%>
-                  </div>
-                  <script type="text/javascript">
-                    function motor_start() {
-                      document.getElementById('motor_image').style.opacity = "1";
-                    }
-
-                    function motor_stop() {
-                      document.getElementById('motor_image').style.opacity = "0";
-                    }
-                    motor_stop()
-                  </script>
+                  <a href="images/project1_image.png"><img style="width:100%;max-width:100%;object-fit:cover;"
+                      src="images/project1_image.png" alt="Project 1" class="hoverZoomLink"></a>
                 </td>
                 <td style="padding:8px;width:80%;vertical-align:middle">
                   <a href="">
@@ -281,10 +269,28 @@
                   </a>
                   <br>
                   <!-- <a href="">more images</a> -->
-                  <p></p>
-                  <p>
-                    TODO
+                  <p style="margin:8px 0 10px 0; text-align:justify;">
+                    This project tackles one of robotics' hardest open problems: enabling a single robot to seamlessly combine locomotion and manipulation in unstructured, real-world environments, without relying on massive datasets or black-box end-to-end models.
                   </p>
+                  <p style="margin:6px 0 2px 0;"><strong>The Problem</strong></p>
+                  <p style="margin:0 0 10px 0; text-align:justify;">
+                    Existing approaches either require prohibitively expensive data collection, lack interpretability for safety-critical use, or fail to generalize beyond their training environment.
+                  </p>
+                  <p style="margin:6px 0 2px 0;"><strong>The Approach</strong></p>
+                  <p style="margin:0 0 6px 0; text-align:justify;">
+                    A modular three-layer architecture decouples perception, neural reasoning, and symbolic control, making each component independently improvable and interpretable:
+                  </p>
+                  <ul style="margin:0 0 0 18px; padding:0;">
+                    <li style="margin-bottom:6px; text-align:justify;">
+                      <strong>Perception layer</strong> - RGB-D camera, LiDAR, and IMU for 3D scene understanding and object pose estimation.
+                    </li>
+                    <li style="margin-bottom:6px; text-align:justify;">
+                      <strong>Neural layer</strong> - A Vision-Language Model (VLM) for open-vocabulary object grounding, paired with a Re-Identification (ReID) module that maintains object identity across occlusions.
+                    </li>
+                    <li style="text-align:justify;">
+                      <strong>Control layer</strong> - A PPO-trained reinforcement learning policy running on a Unitree G1 (29 DOF), trained in Isaac Lab simulation using a two-phase hierarchical reward that transitions the robot from navigation mode to manipulation mode at a 0.75m proximity threshold.
+                    </li>
+                  </ul>
                 </td>
               </tr>
 
