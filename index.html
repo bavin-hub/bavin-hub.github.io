@@ -269,28 +269,33 @@
                   </a>
                   <br>
                   <!-- <a href="">more images</a> -->
-                  <p style="margin:8px 0 10px 0; text-align:justify;">
-                    This project tackles one of robotics' hardest open problems: enabling a single robot to seamlessly combine locomotion and manipulation in unstructured, real-world environments, without relying on massive datasets or black-box end-to-end models.
-                  </p>
-                  <p style="margin:6px 0 2px 0;"><strong>The Problem</strong></p>
+                  <p style="margin:6px 0 2px 0;"><strong>Introduction</strong></p>
                   <p style="margin:0 0 10px 0; text-align:justify;">
-                    Existing approaches either require prohibitively expensive data collection, lack interpretability for safety-critical use, or fail to generalize beyond their training environment.
+                    Robots that combine walking and manipulation could transform hazardous work, disaster response, warehousing, eldercare. Existing approaches require expensive data, lack interpretability, or fail to generalize.
                   </p>
-                  <p style="margin:6px 0 2px 0;"><strong>The Approach</strong></p>
+                  <p style="margin:6px 0 2px 0;"><strong>Design</strong></p>
                   <p style="margin:0 0 6px 0; text-align:justify;">
-                    A modular three-layer architecture decouples perception, neural reasoning, and symbolic control, making each component independently improvable and interpretable:
+                    A three-layer modular architecture:
                   </p>
-                  <ul style="margin:0 0 0 18px; padding:0;">
+                  <ul style="margin:0 0 10px 18px; padding:0;">
                     <li style="margin-bottom:6px; text-align:justify;">
-                      <strong>Perception layer</strong> - RGB-D camera, LiDAR, and IMU for 3D scene understanding and object pose estimation.
+                      <strong>Perception</strong> - RGB-D, LiDAR, and IMU for 3D scene understanding. A VLM enables open-vocabulary object grounding; a ReID module tracks objects across occlusions.
                     </li>
                     <li style="margin-bottom:6px; text-align:justify;">
-                      <strong>Neural layer</strong> - A Vision-Language Model (VLM) for open-vocabulary object grounding, paired with a Re-Identification (ReID) module that maintains object identity across occlusions.
+                      <strong>Neural</strong> - VLM grounds language instructions in the scene, locating any named object without retraining.
                     </li>
                     <li style="text-align:justify;">
-                      <strong>Control layer</strong> - A PPO-trained reinforcement learning policy running on a Unitree G1 (29 DOF), trained in Isaac Lab simulation using a two-phase hierarchical reward that transitions the robot from navigation mode to manipulation mode at a 0.75m proximity threshold.
+                      <strong>Control</strong> - PPO policy on a Unitree G1 (29 DOF), trained in Isaac Lab with a two-phase reward transitioning from navigation to manipulation at 0.75 m.
                     </li>
                   </ul>
+                  <p style="margin:6px 0 2px 0;"><strong>Evaluation</strong></p>
+                  <p style="margin:0 0 10px 0; text-align:justify;">
+                    Policy transferred successfully to the physical robot with consistent phase transitions. Limitation: grasping success rates dropped due to unmodeled contact dynamics.
+                  </p>
+                  <p style="margin:6px 0 2px 0;"><strong>Conclusion</strong></p>
+                  <p style="margin:0; text-align:justify;">
+                    Modular loco-manipulation is achievable without large-scale data. Next steps: domain randomization and tactile feedback to close the sim-to-real gap.
+                  </p>
                 </td>
               </tr>
 
@@ -306,17 +311,29 @@
                   </a>
                   <br>
                   <!-- <a href="">more images</a> -->
-                  <p style="margin:8px 0 10px 0;"><strong>RAG-Powered Search Engine | AI &amp; Full-Stack</strong></p>
+                  <p style="margin:6px 0 2px 0;"><strong>Introduction</strong></p>
                   <p style="margin:0 0 10px 0; text-align:justify;">
-                    A search engine built around Retrieval-Augmented Generation, combining semantic search with a large language model to deliver grounded, contextually accurate answers, not just document links.
+                    Search engines return links; LLMs hallucinate. This project combines both — grounded, accurate answers by anchoring LLM output to retrieved content.
                   </p>
-                  <p style="margin:6px 0 2px 0;"><strong>How the AI Works</strong></p>
+                  <p style="margin:6px 0 2px 0;"><strong>Design</strong></p>
+                  <ul style="margin:0 0 10px 18px; padding:0;">
+                    <li style="margin-bottom:6px; text-align:justify;">
+                      <strong>Retrieval</strong> - Queries embedded via nomic-embed-text, matched against a custom SQLite vector database built from crawled source URLs.
+                    </li>
+                    <li style="margin-bottom:6px; text-align:justify;">
+                      <strong>Generation</strong> - Top-k chunks passed as context to a Llama-instruct model, eliminating hallucination and staleness.
+                    </li>
+                    <li style="text-align:justify;">
+                      <strong>Architecture</strong> - React frontend decoupled from Flask backend via REST API; embedding model, vector store, and LLM each independently swappable.
+                    </li>
+                  </ul>
+                  <p style="margin:6px 0 2px 0;"><strong>Evaluation</strong></p>
                   <p style="margin:0 0 10px 0; text-align:justify;">
-                    Queries are converted into dense vector embeddings using HuggingFace's nomic-embed-text model and matched against a custom SQLite vector database built by crawling and indexing source URLs. The most relevant chunks are retrieved and passed as context to a Llama-instruct model on a HuggingFace inference endpoint, which synthesizes a coherent response anchored to the retrieved content, directly addressing hallucination and knowledge staleness common in vanilla LLMs.
+                    Outperformed keyword search on factual precision; full component swaps validated in under ten minutes. Limitation: retrieval recall drops when source coverage is sparse.
                   </p>
-                  <p style="margin:6px 0 2px 0;"><strong>Architecture</strong></p>
+                  <p style="margin:6px 0 2px 0;"><strong>Conclusion</strong></p>
                   <p style="margin:0; text-align:justify;">
-                    The React frontend is fully decoupled from the Flask backend via a REST API contract, making the AI pipeline swappable without touching the UI. The backend is modular by design: embedding model, vector store, and LLM can each be upgraded independently.
+                    RAG effectively grounds LLM output. Reliable AI systems demand disciplined architecture, not just model selection.
                   </p>
                 </td>
               </tr>
@@ -332,16 +349,32 @@
                     </span>
                   </a>
                   <br>
-                  <p style="margin:8px 0 10px 0;"><strong>Reinforcement Learning Algorithms | Research &amp; Education</strong></p>
+                  <p style="margin:6px 0 2px 0;"><strong>Introduction</strong></p>
                   <p style="margin:0 0 10px 0; text-align:justify;">
-                    A from-scratch implementation of 9 core RL algorithms spanning value-based, policy-based, and actor-critic methods across both discrete and continuous action spaces, built directly from the original papers.
+                    Most RL practitioners use libraries as black boxes, limiting their ability to debug or adapt. This project implements 9 core RL algorithms from scratch — directly from the original papers.
                   </p>
+                  <p style="margin:6px 0 2px 0;"><strong>Design</strong></p>
+                  <ul style="margin:0 0 6px 18px; padding:0;">
+                    <li style="margin-bottom:6px; text-align:justify;">
+                      <strong>Value-based</strong> - Q-Learning, DQN, Dueling Double DQN
+                    </li>
+                    <li style="margin-bottom:6px; text-align:justify;">
+                      <strong>Policy-based</strong> - REINFORCE
+                    </li>
+                    <li style="text-align:justify;">
+                      <strong>Actor-critic</strong> - A2C, DDPG, PPO, SAC, TD3
+                    </li>
+                  </ul>
                   <p style="margin:0 0 10px 0; text-align:justify;">
-                    Covers the full modern RL stack: from foundational Q-Learning and DQN to state-of-the-art algorithms like PPO, SAC, and TD3. Each implementation is self-contained in a single file, heavily commented, and prioritizes clarity over abstraction, making it a practical reference for anyone studying or experimenting with RL concepts.
+                    Each is a single self-contained file, heavily commented, clarity over abstraction.
                   </p>
-                  <p style="margin:6px 0 2px 0;"><strong>Algorithms</strong></p>
+                  <p style="margin:6px 0 2px 0;"><strong>Evaluation</strong></p>
+                  <p style="margin:0 0 10px 0; text-align:justify;">
+                    All nine reproduced published baselines.
+                  </p>
+                  <p style="margin:6px 0 2px 0;"><strong>Conclusion</strong></p>
                   <p style="margin:0; text-align:justify;">
-                    Q-Learning · DQN · Dueling Double DQN · REINFORCE · A2C · DDPG · PPO · SAC · TD3
+                    Implementing from paper to code reveals gaps that using libraries never exposes.
                   </p>
                 </td>
               </tr>
@@ -357,12 +390,26 @@
                     </span>
                   </a>
                   <br>
-                  <p style="margin:8px 0 10px 0;"><strong>Jaffa-Sparrow | Tamil Language Model</strong></p>
+                  <p style="margin:6px 0 2px 0;"><strong>Introduction</strong></p>
                   <p style="margin:0 0 10px 0; text-align:justify;">
-                    A small language model trained natively in Tamil, built from scratch on multilingual datasets including mC4, news articles, storybooks, and Wikipedia. Trained on dual A6000 GPUs (96GB VRAM total) using a single-host multi-device strategy with data parallelism, then fine-tuned on Tamil conversation datasets to support coherent multi-turn dialogue.
+                    Tamil is spoken by 80 million people yet severely underrepresented in AI research. This project builds a Tamil language model from scratch — proving capable LLMs are achievable for low-resource languages.
                   </p>
+                  <p style="margin:6px 0 2px 0;"><strong>Design</strong></p>
+                  <ul style="margin:0 0 10px 18px; padding:0;">
+                    <li style="margin-bottom:6px; text-align:justify;">
+                      <strong>Pre-training</strong> - Trained on mC4, news articles, storybooks, and Wikipedia using data parallelism across dual A6000 GPUs (96 GB VRAM).
+                    </li>
+                    <li style="text-align:justify;">
+                      <strong>Fine-tuning</strong> - SFT on Tamil conversation datasets for coherent multi-turn dialogue.
+                    </li>
+                  </ul>
+                  <p style="margin:6px 0 2px 0;"><strong>Evaluation</strong></p>
+                  <p style="margin:0 0 10px 0; text-align:justify;">
+                    Model produced coherent Tamil dialogue on held-out prompts. Limitation: scale — a larger corpus would improve factual coverage.
+                  </p>
+                  <p style="margin:6px 0 2px 0;"><strong>Conclusion</strong></p>
                   <p style="margin:0; text-align:justify;">
-                    A focused exploration of low-resource language modeling, tackling the challenge of building capable LLMs for languages underrepresented in mainstream AI research.
+                    Capable low-resource LLMs are buildable with constrained compute and careful data curation.
                   </p>
                 </td>
               </tr>
