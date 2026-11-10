@@ -81,31 +81,31 @@ tr,
 p,
 a {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 22px;
+  font-size: 18px;
 }
 
 strong {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 22px;
+  font-size: 18px;
 }
 
 h2 {
   margin: 0;
   font-weight: normal;
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 38px;
+  font-size: 32px;
 }
 
 h3 {
   margin: 0;
   font-weight: 700;
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 26px;
+  font-size: 22px;
 }
 
 .papertitle {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 700;
 }
 
@@ -113,7 +113,7 @@ h3 {
   padding-top: 20px;
   margin: 0;
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 50px;
+  font-size: 42px;
 }
 
 .one {
@@ -146,4 +146,29 @@ span.highlight {
     padding: 20px;
     display: inline-block;
     border-radius: 10px;
+}
+
+/* Standard thumbnail + description layout for publications, projects, experience */
+.thumb-cell {
+  padding: 16px;
+  width: 35%;
+  vertical-align: middle;
+}
+
+.desc-cell {
+  padding: 8px;
+  width: 65%;
+  vertical-align: middle;
+}
+
+.thumb {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+}
+
+.desc {
+  margin: 6px 0 0 0;
+  text-align: justify;
 }
