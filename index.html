@@ -34,7 +34,7 @@
                     I hold a Bachelor's degree in Mechanical Engineering from SSN College of Engineering (Chennai, India). My foundation in robotics and control has been built through hands-on research and independent projects, shaping my approach to designing systems that are both principled and practical.                  </p>
                   <p style="text-align:center">
                     <a href="mailto:bsaravan@andrew.cmu.edu">Email</a> &nbsp;/&nbsp;
-                    <a href="data/Bavin_Resume.pdf" target="_blank" rel="noopener">CV</a> &nbsp;/&nbsp;
+                    <a href="data/Bavin_CV.pdf" target="_blank" rel="noopener">CV</a> &nbsp;/&nbsp;
                     <!-- <a href="https://scholar.google.com/citations?user=NvjazjgAAAAJ" target="_blank" rel="noopener">Scholar</a> &nbsp;/&nbsp; -->
                     <!-- <a href="https://x.com/YuchenZhan54250" target="_blank" rel="noopener">Twitter</a> &nbsp;/&nbsp; -->
                     <a href="https://github.com/bavin-hub" target="_blank" rel="noopener">Github</a>
@@ -360,6 +360,75 @@
 
               <tr>
                 <td class="thumb-cell">
+                  <a href="images/crazy_musician.jpg" target="_blank" rel="noopener"><img class="thumb" src="images/crazy_musician.jpg" alt="Quadrotor with a stylus for keyboard playing"></a>
+                </td>
+                <td class="desc-cell">
+                  <a href="https://github.com/bavin-hub/CrazyMusician" target="_blank" rel="noopener">
+                    <span class="papertitle">CrazyMusician - Drone Keyboard Playing</span>
+                  </a>
+                  <br>
+                  <em>ROS2, PX4, ADRC &nbsp;|&nbsp; Sep 2026 - Dec 2026</em>
+                  &nbsp;/&nbsp; <a href="https://github.com/bavin-hub/CrazyMusician" target="_blank" rel="noopener">code</a>
+                  <p class="desc">
+                    Flight-control and deployment pipeline for a quadrotor that plays a keyboard: ADRC on a Starling 2 Max through a ROS2&ndash;PX4 offboard interface, plus a revised controller keeping PX4's velocity loop with acceleration feedforward that achieved stable hover in a motion-capture cage.
+                  </p>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="thumb-cell">
+                  <a href="images/px4_gym.gif" target="_blank" rel="noopener"><img class="thumb" src="images/px4_gym.gif" alt="PX4-Gym depth-based navigation"></a>
+                </td>
+                <td class="desc-cell">
+                  <a href="https://github.com/bavin-hub/Px4-Gym" target="_blank" rel="noopener">
+                    <span class="papertitle">PX4-Gym - Learning-Based Quadrotor Control and Navigation</span>
+                  </a>
+                  <br>
+                  <em>Isaac Lab, PyTorch, PPO, ROS2, PX4 &nbsp;|&nbsp; Jun 2026 - Present</em>
+                  &nbsp;/&nbsp; <a href="https://github.com/bavin-hub/Px4-Gym" target="_blank" rel="noopener">code</a>
+                  <p class="desc">
+                    Torch-native PX4-style control pipeline in Isaac Lab for the Starling 2 Max, with vehicle and motor dynamics and PPO training at position, velocity, attitude, and body-rate levels. Depth/RGB perception for obstacle navigation and ROS2 policy inference for PX4 offboard deployment.
+                  </p>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="thumb-cell">
+                  <a href="images/random_agent.gif" target="_blank" rel="noopener"><img class="thumb" src="images/random_agent.gif" alt="Random Agent training and deployment pipeline"></a>
+                </td>
+                <td class="desc-cell">
+                  <a href="https://github.com/bavin-hub/OCRL_Random_Agent" target="_blank" rel="noopener">
+                    <span class="papertitle">Random Agent - Model-Based RL for Humanoid Locomotion</span>
+                  </a>
+                  <br>
+                  <em>PyTorch, GRU World Model, MPPO, MuJoCo/MJLab &nbsp;|&nbsp; Feb 2026 - May 2026</em>
+                  &nbsp;/&nbsp; <a href="https://github.com/bavin-hub/OCRL_Random_Agent" target="_blank" rel="noopener">code</a>
+                  <p class="desc">
+                    Model-based RL for Unitree G1 locomotion: a GRU world model learns robot dynamics from state&ndash;action histories, and model-based PPO (MPPO) alternates world-model updates with policy optimization on imagined rollouts.
+                  </p>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="thumb-cell">
+                  <a href="images/hierarchical_locomanip.gif" target="_blank" rel="noopener"><img class="thumb" src="images/hierarchical_locomanip.gif" alt="Quadruped pick and G1 humanoid reaching"></a>
+                </td>
+                <td class="desc-cell">
+                  <a href="https://github.com/bavin-hub/Hierarchical-LocoManipulation" target="_blank" rel="noopener">
+                    <span class="papertitle">Hierarchical Loco-Manipulation - Unitree G1</span>
+                  </a>
+                  <br>
+                  <em>Navigation; Isaac Lab, PPO &nbsp;|&nbsp; Sep 2025 - Dec 2025</em>
+                  &nbsp;/&nbsp; <a href="https://github.com/bavin-hub/Hierarchical-LocoManipulation" target="_blank" rel="noopener">code</a>
+                  <p class="desc">
+                    Navigation component of a perception-driven humanoid system, linking scene understanding and target following to whole-body control. Integrated with a PPO walk-and-reach policy trained in Isaac Lab with a distance-gated locomotion-to-reaching reward, evaluated in simulation.
+                  </p>
+                </td>
+              </tr>
+
+              <!-- Older projects hidden (replaced by the CV projects above). Remove this comment to show them again.
+              <tr>
+                <td class="thumb-cell">
                   <a href="images/project1_image.png" target="_blank" rel="noopener"><img class="thumb" src="images/project1_image.png" alt="Loco-manipulation on Unitree G1"></a>
                 </td>
                 <td class="desc-cell">
@@ -405,6 +474,7 @@
                   </p>
                 </td>
               </tr>
+              -->
 
               <!-- Jaffa project hidden for now. Remove display:none to show it again. -->
               <tr style="display:none;">
